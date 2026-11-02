@@ -1,0 +1,5 @@
+vk-api
+requests
+lyricsgenius
+Pillow
+urllib3
