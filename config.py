@@ -3,12 +3,28 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# ========== ТОКЕНЫ (из .env) ==========
 BOT_TOKEN          = os.getenv("BOT_TOKEN", "")
 USER_TOKEN         = os.getenv("USER_TOKEN", "")
 GROUP_ID           = int(os.getenv("GROUP_ID", "0"))
 GIGACHAT_AUTH_KEY  = os.getenv("GIGACHAT_AUTH_KEY", "")
 GIGACHAT_CLIENT_ID = os.getenv("GIGACHAT_CLIENT_ID", "")
 GENIUS_TOKEN       = os.getenv("GENIUS_TOKEN", "")
+
+# ========== ФОТО РЕБЁНКА ==========
+CHILD_PHOTO_MALE = "photo-241029527_457239062"
+CHILD_PHOTO_FEMALE = "photo-241029527_457239064"
+
+# ========== ПУТИ К ДАННЫМ ==========
+DATA_DIR = "data"
+
+RP_FILE         = os.path.join(DATA_DIR, "custom_rp.json")
+STATS_FILE      = os.path.join(DATA_DIR, "stats.json")
+MARRIAGE_FILE   = os.path.join(DATA_DIR, "marriages.json")
+CHILDREN_FILE   = os.path.join(DATA_DIR, "children.json")
+PREGNANCY_FILE  = os.path.join(DATA_DIR, "pregnancies.json")
+CHAT_STATS_FILE = os.path.join(DATA_DIR, "chat_stats.json")
+MUTED_FILE      = os.path.join(DATA_DIR, "muted.json")
 
 # ========== ЖАНРЫ / НАСТРОЕНИЯ ==========
 GENRES = {"рок":"rock","поп":"pop","хип-хоп":"hiphop","рэп":"rap","электроника":"electronic","танцевальная":"dance","хаус":"house","техно":"techno","транс":"trance","джаз":"jazz","блюз":"blues","классика":"classical","метал":"metal","панк":"punk","регги":"reggae","кантри":"country","фолк":"folk","инди":"indie","альтернатива":"alternative","шансон":"chanson","поп-рок":"poprock","соул":"soul","фанк":"funk","диско":"disco","лаунж":"lounge","эмбиент":"ambient","dubstep":"dubstep","drum_and_bass":"drumandbass","hardstyle":"hardstyle","psytrance":"psytrance","к-поп":"kpop","инструментальная":"instrumental","саундтрек":"soundtrack"}
