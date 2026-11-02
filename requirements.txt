@@ -3,3 +3,4 @@ requests
 lyricsgenius
 Pillow
 urllib3
+python-dotenv
